@@ -1,0 +1,19 @@
+## ヘッダー部
+<div style="background-color:white;">
+
+	<img src="$bean.getHeadSubImageLink()" />
+	<br />
+
+	<!-- ロゴラベル・リンク  -->
+	<a href="$bean.getIndexLink()" class="logolabel">
+		<img src="$bean.getHeadImageLink()" alt="$bean.getHeadImageText()" />
+	</a>
+	<br />
+
+	<img src="$bean.getHeadFooterImageLink()" /><br />
+
+	#foreach($menu in $bean.getMenuList())
+		<a href="$menu.getLink()" class="menubtn">$menu.getName()</a>
+	#end
+	<br />
+</div>

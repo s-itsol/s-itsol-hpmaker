@@ -1,0 +1,49 @@
+
+/* ロゴラベル */
+.logolabel {
+	text-decoration: none;
+}
+
+/* メニューボタン */
+.menubtn {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	color: #444444;
+	width: 160px;
+	border-radius: 4px;
+	text-align: center;
+	vertical-align:top;
+	overflow: hidden;
+	font-weight: bold;
+	background-image: -webkit-linear-gradient(#eeeedd 0%, #aaaaaa 100%);
+	background-image: linear-gradient(#eeeedd 0%, #aaaaaa 100%);
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+	margin-right: -6;
+}
+
+/* メニューボタン押下時 */
+.menubtn:active {
+	-ms-transform: translateY(2px);
+	-webkit-transform: translateY(2px);
+	transform: translateY(2px);				/*沈むように*/
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+	background-image: -webkit-linear-gradient(#eeeedd 0%, #bbbbbb 100%);
+	background-image: linear-gradient(#eeeedd 0%, #bbbbbb 100%);		/*グラデーションを明るく*/
+}
+
+.label {
+	color: white;
+	background: midnightblue;
+	height="20"
+}
+
+.item {
+	border-width:1;
+	border-color:black;
+	border-style:solid;
+	background:lightyellow;
+	height="20"
+}
+
