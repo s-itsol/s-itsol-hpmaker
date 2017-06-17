@@ -12,6 +12,8 @@ import net.sitsol.hpmaker.consts.AppConfig;
  */
 public class KeirekiBean extends BaseBean {
 
+	private static final long serialVersionUID = -26564197194535224L;
+
 	private String excelKeirekiLink = AppConfig.BASE_URL + "keireki/keireki.xls";
 
 	public String getExcelKeirekiLink() {

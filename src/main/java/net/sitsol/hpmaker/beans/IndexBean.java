@@ -14,6 +14,8 @@ import net.sitsol.hpmaker.beans.common.BaseBean;
  */
 public class IndexBean extends BaseBean {
 
+	private static final long serialVersionUID = -749876341578751051L;
+
 	public class WhatNewItem {
 		private String date = null;
 		private String text = null;

@@ -14,6 +14,8 @@ import net.sitsol.hpmaker.beans.common.BaseBean;
  */
 public class GaiyoBean extends BaseBean {
 
+	private static final long serialVersionUID = -4789810172039609179L;
+
 	public class InfoItem {
 		private String title = null;
 		private String text = null;
@@ -41,7 +43,7 @@ public class GaiyoBean extends BaseBean {
 		this.infoList.add(new InfoItem("営業形態", "インディペンデント・コントラクター （独立契約者）"));
 		this.infoList.add(new InfoItem("所員数", "1名"));
 		this.infoList.add(new InfoItem("代表者", "柴野 玲"));
-		this.infoList.add(new InfoItem("事業内容", "Web・オープン系システム開発の業務委託契約 ほか"));
+		this.infoList.add(new InfoItem("事業内容", "WEBデザイン・システム開発の業務委託契約 ほか"));
 	}
 
 	public List<InfoItem> getInfoList() {
