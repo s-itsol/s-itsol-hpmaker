@@ -48,6 +48,7 @@ public abstract class BaseBean implements Serializable {
 	private String menuBackImageLink = AppConfig.IMAGE_URL + "menu_pre.gif";
 
 	public BaseBean() {
+		menuList.add(new MenuItem(AppConfig.BASE_URL + "index.html", "トップページ"));
 		menuList.add(new MenuItem(AppConfig.BASE_URL + "gaiyo/gaiyo_index.html", "事務所概要"));
 		menuList.add(new MenuItem(AppConfig.BASE_URL + "keireki/keireki_index.html", "業務経歴"));
 		menuList.add(new MenuItem(AppConfig.BASE_URL + "contact/contact_index.html", "お問い合わせ"));
