@@ -44,7 +44,7 @@ public class IndexBean extends BaseBean {
 	}
 
 	private String keywords	= "柴野ＩＴソリューション,柴野ITソリューション,柴野ＩＴ,柴野IT,s-itsol,柴野,しばのＩＴソリューション,しばのITソリューション,しばのＩＴ,しばのIT,柴野it-sol,ITアーキテクト,ITエンジニア,JAVA,人材派遣,フリーランス";
-	private String contStatus	= " 現在、業務委託契約中。契約更新時期は2017年9月末です。 ";
+	private String contStatus	= " 現在、業務委託契約中。契約更新時期は2017年12月末です。 ";
 	private List<WhatNewItem> whatNewList = new ArrayList<WhatNewItem>();
 
 	public IndexBean() {
