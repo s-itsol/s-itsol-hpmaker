@@ -29,7 +29,7 @@
 		<table border="0" width="100%">
 			<tr>
 				<td width="3%"></td>
-				<td width="97%">$bean.getContStatus()</td>
+				<td width="97%">現在、業務委託契約中。契約更新時期は2018年6月末です。</td>
 			</tr>
 		</table>
 		<br />
@@ -47,7 +47,7 @@
 		<table border="0" width="100%">
 			<tr>
 				<td width="3%"></td>
-				<td width="97%">「月73万(内税) 140～180h 超過精算あり」からご相談にのります。</td>
+				<td width="97%">「月78万(税別) 140～180h 超過精算あり」からご相談にのります。</td>
 			</tr>
 		</table>
 		<br />
