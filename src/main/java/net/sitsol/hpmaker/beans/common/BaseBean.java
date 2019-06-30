@@ -37,13 +37,11 @@ public abstract class BaseBean implements Serializable {
 	}
 
 	private String title		= "柴野ＩＴソリューション";
-	private String baseCssPath	= AppConfig.BASE_URL + "css/base.css?20170617";
-	private int contentsWidthSize = AppConfig.CONTENTS_WIDTH_SIZE;
-	private String headSubImageLink = AppConfig.IMAGE_URL + "logo_sub.gif";
-	private String headImageLink = AppConfig.IMAGE_URL + "logo_main.gif";
-	private String headFooterImageLink = AppConfig.IMAGE_URL + "logo_footer.gif";
+	private String baseCssPath	= AppConfig.BASE_URL + "css/base.css?20190701";
+	private String headImageLink = AppConfig.IMAGE_URL + "logo.gif";
+	private String headFooterImageLink = AppConfig.IMAGE_URL + "bg_logo_footer.gif";
 	private String indexLink = AppConfig.BASE_URL;
-	private String headImageText = "柴野ＩＴソリューション";
+	private String headImageText = "オールラウンダーなITアーキテクトを求めるSIer様へ… 柴野ITソリューション";
 	private List<MenuItem> menuList = new ArrayList<MenuItem>();
 	private String menuBackImageLink = AppConfig.IMAGE_URL + "menu_pre.gif";
 
@@ -86,14 +84,6 @@ public abstract class BaseBean implements Serializable {
 		this.menuList = menuList;
 	}
 
-	public String getHeadSubImageLink() {
-		return headSubImageLink;
-	}
-
-	public void setHeadSubImageLink(String headSubImageLink) {
-		this.headSubImageLink = headSubImageLink;
-	}
-
 	public String getHeadFooterImageLink() {
 		return headFooterImageLink;
 	}
@@ -124,14 +114,6 @@ public abstract class BaseBean implements Serializable {
 
 	public void setBaseCssPath(String baseCssPath) {
 		this.baseCssPath = baseCssPath;
-	}
-
-	public int getContentsWidthSize() {
-		return contentsWidthSize;
-	}
-
-	public void setContentsWidthSize(int contentsWidthSize) {
-		this.contentsWidthSize = contentsWidthSize;
 	}
 
 }

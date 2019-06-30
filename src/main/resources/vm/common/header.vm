@@ -1,19 +1,22 @@
-## ヘッダー部
-<div style="background-color:white;">
+## 共通ヘッダ
+<div class="commonHeader">
 
-	<img src="$bean.getHeadSubImageLink()" />
-	<br />
+	<div class="headerLogo">
+		<a href="$bean.getIndexLink()">
+			<img src="$bean.getHeadImageLink()" alt="$bean.getHeadImageText()" />
+		</a>
+	</div>
 
-	<!-- ロゴラベル・リンク  -->
-	<a href="$bean.getIndexLink()" class="logolabel">
-		<img src="$bean.getHeadImageLink()" alt="$bean.getHeadImageText()" />
-	</a>
-	<br />
+	<div class="logoFooter">
+		<img src="$bean.getHeadFooterImageLink()" />
+	</div>
 
-	<img src="$bean.getHeadFooterImageLink()" /><br />
+	<ul class="headerMenu">
+		#foreach($menu in $bean.getMenuList())##
+			<li>
+				<a href="$menu.getLink()" class="menubtn">$menu.getName()</a>
+			</li>
+		#end##
+	</ul>
 
-	#foreach($menu in $bean.getMenuList())
-		<a href="$menu.getLink()" class="menubtn">$menu.getName()</a>
-	#end
-	<br />
-</div>
+</div><!-- .commonHeader -->

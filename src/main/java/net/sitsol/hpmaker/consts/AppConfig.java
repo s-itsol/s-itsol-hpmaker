@@ -22,6 +22,5 @@ public class AppConfig {
 	public static String BASE_URL				= "http://www.s-itsol.net/";	// サーバアップ用
 	public static String IMAGE_URL			= BASE_URL + "images/";
 	public static String OUT_CHARSET			= "utf-8";
-	public static int CONTENTS_WIDTH_SIZE		= 740;
 
 }

@@ -1,36 +1,32 @@
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="Content-Language" content="ja" />
-		<title>$bean.getTitle()</title>
-		<link rel=stylesheet type=text/css href="$bean.getBaseCssPath()" />
-		## script無効警告部
-		#parse("/common/noscript.vm")
-	</head>
+<head>
+##	HTMLヘッダ
+	#parse("/common/html_header.vm")##
+</head>
 
-	<body>
-	<center><table width="$bean.getContentsWidthSize()"><tr><td>
-		## ヘッダー部
-		#parse("/common/header.vm")
-		<br />
+<body>
+##	共通ヘッダ
+	#parse("/common/header.vm")##
 
-		<table border="0" width="100%">
-			<td valign="top" width="*">
-				HOME &gt; お問い合せ<p>
-				<b>お問い合せ</b><br />
-				<hr>
-					各種お問い合せは…<br />
-					<table border="0" width="100%">
-						<tr>
-							<td width="3%" />
-							<td width="97%">
-								<a href="mailto:info@s-itsol.net" target="_blank">info@s-itsol.net</a> 宛てにご連絡ください。
-							</td>
-						</tr>
-					</table>
-			</td>
-		</table>
+	<div class="contents">
 
-	</td></tr></table></center>
-	</body>
+		<div class="bread">
+			HOME &gt; お問い合せ
+		</div>
+
+		<div class="contentsTitle">
+			お問い合せ
+		</div>
+
+		<hr>
+
+		<div class="nomalTbl">
+			<span>各種お問い合せは…</span>
+			<div>
+				<a href="mailto:info@s-itsol.net" target="_blank">info@s-itsol.net</a> 宛てにご連絡ください。
+			</div>
+		</div><!-- .nomalTbl -->
+
+	</div><!-- .contents -->
+</body>
 </html>

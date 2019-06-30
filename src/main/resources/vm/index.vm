@@ -1,70 +1,44 @@
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="Content-Language" content="ja" />
-		<title>$bean.getTitle()</title>
-		<meta name="ROBOTS" content="ALL" />
-<meta name="description" content="技術にも業務にも強い、オールラウンダーなフリーランスのITアーキテクト。
-貴社のSIプロジェクトの成功率を格段に高められます！！" />
-		<meta name="keywords" content="$bean.getKeywords()" />
-		<link rel=stylesheet type=text/css href="$bean.getBaseCssPath()" />
-		## script無効警告部
-		#parse("/common/noscript.vm")
-	</head>
+<head>
+##	HTMLヘッダ
+	#parse("/common/html_header.vm")##
+</head>
 
-	<body>
-	<center><table width="$bean.getContentsWidthSize()"><tr><td>
-		## ヘッダー部
-		#parse("/common/header.vm")
-		<br />
+<body>
+##	共通ヘッダ
+	#parse("/common/header.vm")##
 
-		<center>
-			<marquee width="100%">
-				デザインリニューアルしてみました！
-			</marquee>
-		</center>
-		<br />
-
-		<b>契約状況：</b>
-		<table border="0" width="100%">
-			<tr>
-				<td width="3%"></td>
-				<td width="97%">現在、業務委託契約中。契約更新時期は2018年6月末です。</td>
-			</tr>
-		</table>
-		<br />
-
-		<b>業務経歴最終更新日：</b>
-		<table border="0" width="100%">
-			<tr>
-				<td width="3%"></td>
-				<td width="97%">2017.10.16</td>
-			</tr>
-		</table>
-		<br />
-
-		<b>最低契約金額：</b>
-		<table border="0" width="100%">
-			<tr>
-				<td width="3%"></td>
-				<td width="97%">「月78万(税別) 140～180h 超過精算あり」からご相談にのります。</td>
-			</tr>
-		</table>
-		<br />
-
-		<marquee behavior="alternate" width="15%">
-			<i><b>What's New</b></i>
+	<div class="contents">
+		<marquee class="flowMessage">
+			レスポンシブWebデザインに対応させました。
 		</marquee>
-		<table border="0" width="100%">
-			#foreach($whatNew in $bean.getWhatNewList())
-				<tr>
-					<td width="19%">$whatNew.getDate()</td>
-					<td width="81%">$whatNew.getText()</td>
-				</tr>
-			#end
-		</table>
-		<br />
 
-	</td></tr></table></center>
-	</body>
+		<dl class="indexItem">
+			<dt>契約状況</dt>
+			<dd>
+				現在、業務委託契約中。契約更新時期は2019年9月末です。
+			</dd>
+			<dt>業務経歴最終更新日</dt>
+			<dd>
+				2017.10.16
+			</dd>
+			<dt>最低契約金額</dt>
+			<dd>
+				「月78万(税別) 140～180h 超過精算あり」からご相談にのります。
+			</dd>
+		</dl>
+
+		<div class="news">
+			<marquee behavior="alternate">
+				What's New
+			</marquee>
+			<dl>
+				#foreach($whatNew in $bean.getWhatNewList())##
+					<dt>$whatNew.getDate()</dt>
+					<dd>$whatNew.getText()</dd>
+				#end##
+			</dl>
+		</div>
+	</div><!-- .contents -->
+</body>
 </html>

@@ -1,0 +1,15 @@
+## HTMLヘッダ
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<title>$bean.getTitle()</title>
+<meta name="robots" content="all" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="技術にも業務にも強い、オールラウンダーなフリーランスのITアーキテクト。貴社のSIプロジェクトの成功率を格段に高められます！！" />
+<meta name="keywords" content="$bean.getKeywords()" />
+<link rel=stylesheet type=text/css href="$bean.getBaseCssPath()" />
+<noscript>
+	<div style="background-color:yellow; font-size:large; text-align:center; font-weight: bold; padding:10px;">
+		お使いのブラウザは JavaScript が無効です。<br />
+		設定を変更して再度表示してください<br />
+	</div>
+</noscript>
